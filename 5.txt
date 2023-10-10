@@ -1,34 +1,15 @@
 #include <iostream>
-
 using namespace std;
 
 int main() {
-	setlocale(0, "");
-	int number;
-	cout << "Введите число: ";
-	cin >> number;
+ setlocale(0, "");
+ int num;
+ cout << "Введите число:";
+ cin >> num;
+ if (num % 3 == 0 and num % 5 == 0)
 
-	bool isPowerOfTwo = false;
+ cout << "Число кратно трем и пяти";
+ else cout << "Число не кратно трем и пяти";
 
-	if (number > 0) {
-		while (number != 1) {
-			if (number % 2 != 0) {
-				break;
-			}
-			number /= 2;
-		}
-
-		if (number == 1) {
-			isPowerOfTwo = true;
-		}
-	}
-
-	if (isPowerOfTwo) {
-		cout << "Число " << number << " является степенью двойки" << endl;
-	}
-	else {
-		cout << "Число " << number << " не является степенью двойки" << endl;
-	}
-
-	return 0;
+ return 0;
 }
